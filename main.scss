@@ -1,0 +1,92 @@
+$darkslategrey: #2f4f4f;
+$white: #ffffff;
+$black: #000000;
+$font: 'Lato' !important;
+$font-weight: 100;
+$first-section-margin: 6.2em;
+
+@mixin font_stuff($font, $font-size, $font-weight, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-family: $font;
+  color: $color;
+}
+
+@mixin section($color, $fontcolor, $margin-top) {
+  background-color: $color;
+  padding: 8em;
+  overflow:hidden;
+  margin-top: $margin-top;
+
+  div:nth-child(1){
+    width:40%;
+    display: inline-block;
+  }
+
+  div:nth-child(2){
+    width: 60%;
+    float:right;
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      font-family: $font;
+      font-weight: $font-weight;
+      color: $fontcolor;
+    }
+  }
+
+}
+
+
+body{
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  padding-top: 0rem;
+  background: rgba(255, 255, 255, 0.95);
+
+  h3 {
+    display: inline-block;
+    margin: 1em 1em 0 1em;
+    @include font_stuff($font, 2em, $font-weight, $darkslategrey);
+  }
+
+  nav {
+    display: inline-block;
+    right: 0;
+    text-align: right;
+    margin-right: 2em;
+    margin-left: 26em;
+
+    a {
+      text-decoration: none;
+      padding: 0 1em 0 1em;
+      @include font_stuff($font, 1.5em, $font-weight, $darkslategrey);
+    }
+
+    a.active {
+      border-bottom: 0.1em solid;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+  p {
+    @include font_stuff($font, 1.5em, $font-weight, $darkslategrey);
+    text-align: center;
+  }
+}
+
+#about { @include section($darkslategrey, $white, $first-section-margin); }
+
+#experience{ @include section($white, $black, 0em); }
+
+#contact{ @include section($darkslategrey, $white, 0em); }

@@ -1,0 +1,100 @@
+body {
+  margin: 0; }
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  padding-top: 0rem;
+  background: rgba(255, 255, 255, 0.95); }
+  header h3 {
+    display: inline-block;
+    margin: 1em 1em 0 1em;
+    font-size: 2em;
+    font-weight: 100;
+    font-family: "Lato" !important;
+    color: #2f4f4f; }
+  header nav {
+    display: inline-block;
+    right: 0;
+    text-align: right;
+    margin-right: 2em;
+    margin-left: 26em; }
+    header nav a {
+      text-decoration: none;
+      padding: 0 1em 0 1em;
+      font-size: 1.5em;
+      font-weight: 100;
+      font-family: "Lato" !important;
+      color: #2f4f4f; }
+    header nav a.active {
+      border-bottom: 0.1em solid;
+      font-weight: bold; }
+
+footer p {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: "Lato" !important;
+  color: #2f4f4f;
+  text-align: center; }
+
+#about {
+  background-color: #2f4f4f;
+  padding: 8em;
+  overflow: hidden;
+  margin-top: 6.2em; }
+  #about div:nth-child(1) {
+    width: 40%;
+    display: inline-block; }
+  #about div:nth-child(2) {
+    width: 60%;
+    float: right; }
+    #about div:nth-child(2) p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      font-family: "Lato" !important;
+      font-weight: 100;
+      color: #ffffff; }
+
+#experience {
+  background-color: #ffffff;
+  padding: 8em;
+  overflow: hidden;
+  margin-top: 0em; }
+  #experience div:nth-child(1) {
+    width: 40%;
+    display: inline-block; }
+  #experience div:nth-child(2) {
+    width: 60%;
+    float: right; }
+    #experience div:nth-child(2) p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      font-family: "Lato" !important;
+      font-weight: 100;
+      color: #000000; }
+
+#contact {
+  background-color: #2f4f4f;
+  padding: 8em;
+  overflow: hidden;
+  margin-top: 0em; }
+  #contact div:nth-child(1) {
+    width: 40%;
+    display: inline-block; }
+  #contact div:nth-child(2) {
+    width: 60%;
+    float: right; }
+    #contact div:nth-child(2) p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.5em;
+      font-family: "Lato" !important;
+      font-weight: 100;
+      color: #ffffff; }
+
+/*# sourceMappingURL=main.css.map */
